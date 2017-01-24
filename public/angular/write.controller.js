@@ -16,4 +16,6 @@ angular
         getPosts.get().then(function(data) {
             $scope.posts = data;
         });
+
+        $scope.today = today();
     });
