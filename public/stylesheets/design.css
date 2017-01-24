@@ -1,0 +1,91 @@
+html, body, #us div
+{
+    /**
+        COLOR POSSIBILITIES
+    */
+    background: #34495e !important;
+
+}
+/**
+        FONT:
+ */
+
+h1, h2 {
+    font-family: "Avenir Next", Helvetica, Arial;
+    color: beige;
+
+}
+
+h3, h4 {
+    font-family:  Helvetica, Arial;
+    color: white;
+    opacity: 0.30;
+
+}
+
+p, .date, label{
+    font-family:  Helvetica, Arial;
+    font-size: .8em;
+    color: white;
+    opacity: 0.60
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.60;
+}
+
+#diary .date {
+    border-radius: 100% 100% 100% 100%;
+    background:  rgba(0,0,0, 0.10);
+    text-align: center;
+    display: inline-block;
+
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.date .day {
+    font-size : 2em;
+    margin-bottom: 0;
+}
+
+.date .month {
+    margin-top: 0;
+}
+
+#diary h1 {
+    position: relative;
+    text-align: center;
+}
+
+#diary h3 {
+    opacity: 0.20;
+}
+
+#write {
+    max-width: 800px;
+}
+#write input[type="text"] {
+    width: 96%;
+    font-family: "Avenir Next", Helvetica, Arial;
+    font-weight: 700;
+    font-size: 2em;
+    padding: 2%;
+    margin-bottom: 0;
+    border: 0;
+}
+
+#write textarea {
+    width: 96%;
+    padding: 2%;
+    margin-top: 0;
+    border: 0;
+    border-top: 1px solid black;
+}

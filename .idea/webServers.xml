@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ef2cb464-be9d-42bd-9728-2a6adfd88d8e" name="Byteme" url="http://ftp.byteme.no">
+        <fileTransfer host="ftp.byteme.no" port="21" password="dfcedfdcdf9ddf87df9bdf9adf93df9f" username="byteme.no">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="5a81d443-e214-4696-98dd-bca4a72b1d36" name="Xampp" url="http://localhost:80/">
+        <fileTransfer port="0" mountedRoot="$PROJECT_DIR$/../../xamppfiles/htdocs" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

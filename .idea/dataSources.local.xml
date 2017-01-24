@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - byteme_no@localhost" uuid="3d39dccf-692d-4dbd-bf58-357ac9be664c">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>byteme_no.*</schema-pattern>
+      <default-schemas>byteme_no.*</default-schemas>
+    </data-source>
+  </component>
+</project>
