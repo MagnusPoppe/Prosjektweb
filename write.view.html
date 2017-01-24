@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="prosjektWeb">
+<head>
+    <meta charset="UTF-8">
+    <title>Write new - Prosjektweb</title>
+    <link rel="stylesheet" href="public/stylesheets/general.css">
+    <link rel="stylesheet" href="public/stylesheets/design.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="write.controller.js"></script>
+
+    <script src="posts.service.js"></script>
+    <script src="users.service.js"></script>
+    <script src="dateFormatter.filter.js"></script>
+</head>
+<body>
+    <main id="write" ng-controller="writeController" >
+        <h2>Skriv nytt innlegg:</h2>
+        <form action="/api/diary/post.php" method="GET">
+            <input type="text" name="title" id="title" placeholder="Skriv inn tittel" ng-model="titleField">
+            <br>
+            <textarea name="content" id="content" rows="10" placeholder="Skriv inn innhold" ng-model="contentField"></textarea>
+            <div>
+                <label>Hvem er du?</label>
+                <select name="owner" ng-model="ownerField">
+                    <option ng-repeat="user in users" value="{{ user.id }}">{{ user.name }} </option>
+                </select>
+                <button type="submit"> Lagre innlegg </button>
+            </div>
+        </form>
+
+        <section id="diary"> <!-- HER KOMMER BLOGGEN -->
+            <h2>Forhåndsvisning av innlegg</h2>
+            <div>
+                <div class="date" ng-bind-html="new Date() | formatDate">
+                </div>
+                <article >
+                    <h2> {{ titleField }} </h2>
+                    <h3> Av {{ ownerField }} </h3>
+                    <p> {{ contentField }} </p>
+                </article>
+            </div>
+            <div ng-repeat="post in posts">
+                <div class="date" ng-bind-html="post.date | formatDate"></div>
+                <article >
+                    <h2> {{ post.title }} </h2>
+                    <h3> Av {{ post.owner }}</h3>
+                    <p> {{ post.content }} </p>
+                    <p ng-repeat="links in post.links">
+                        <a href="{{ links.link }}">{{ links.text }}</a>
+                    </p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>

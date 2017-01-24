@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="prosjektWeb">
+<head>
+    <meta charset="UTF-8">
+    <title>Dagbok - Bachelorprosjekt</title>
+
+    <link rel="stylesheet" href="public/stylesheets/general.css">
+    <link rel="stylesheet" href="public/stylesheets/design.css">
+
+    <link rel="stylesheet" href="public/stylesheets/mobile.css">
+    <link rel="stylesheet" href="public/stylesheets/desktop.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.1/angular-sanitize.js"></script>
+
+    <script src="diary.controller.js"></script>
+    <script src="posts.service.js"></script>
+    <script src="dateFormatter.filter.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body >
+    <header>
+        <h1> 6117 BACHELORPROSJEKT </h1>
+
+    </header>
+    <main ng-controller="diary">
+
+
+        <section id="us">
+            <div>
+                <a href="">
+                    <img src="public/images/haakon.jpg"/>
+                    <h2> Håkon Mølstre</h2>
+                </a>
+                <h4> Back-end programmerer</h4>
+                <p>
+                    Jeg blei med på dette prosjektet fordi jeg er interresert i å lære å lage et spill.
+                </p>
+            </div>
+            <div>
+                <a href="http://github.com/magnuspoppe">
+                    <img src="public/images/magnus.jpg"/>
+                    <h2> Magnus Poppe Wang</h2>
+                </a>
+                <h4> Prosjektleder / Programmerer</h4>
+                <p>
+                    Her kommer en liten snutt om hvorfor jeg vil jobbe på prosjektet og
+                    evt "om meg" felt.
+                </p>
+            </div>
+            <div>
+                <a href="">
+                    <img src="public/images/ruben.jpg"/>
+                    <h2> Ruben Bratsberg</h2>
+                </a>
+                <h4> PR ansvarlig / Programmerer </h4>
+                <p>
+                    Her kommer en liten snutt om hvorfor jeg vil jobbe på prosjektet og
+                    evt "om meg" felt.
+                </p>
+            </div>
+            <div>
+                <a href="">
+                    <img src="public/images/haavard.jpg"/>
+                    <h2> Håvard Torp Helmersen</h2>
+                </a>
+                <h4> Front-end programmerer</h4>
+                <p>
+                    Her kommer en liten snutt om hvorfor jeg vil jobbe på prosjektet og
+                    evt "om meg" felt.
+                </p>
+            </div>
+        </section>
+
+        <section id="about">
+            <div>
+                <h2>Om Prosjektet</h2>
+                <p>
+                    Oppdraget vårt er å lage et spill inspirert av Heroes of Might and Magic 3
+                    fra 1999. Hele gruppen er fans av dette og det er der motivasjonen kommer
+                    fra. Spillet er altså da et 2-dimensjonelt strategispill med store rollespill
+                    komponenter. Vi vet alt at det finnes et marked for dette, da det fortsatt er
+                    aktive forumer som diskuterer spillet. Det er også fortsatt innhold som blir
+                    laget til Heroes 3.
+                    <br><br>
+                    Vi skal bruke arbeidsmetodikken Scrum fullt ut, med daglige scrum-møter 2-ukers
+                    sprinter. Våre faste arbeidsdager for prosjektet er tirsdag, onsdag og fredag.
+                    Dette skal utføres til prosjektet er fullført. Vi har kapret oss bakre del av
+                    prosjektlabratoriumet som vårt kontor. Scrum sammen med kanban er etter vår
+                    mening en god måte å planlegge.
+                    <br><br>
+                    Spillet er en rundebasert strategispill i en fantasiverden. Spilleren kontroller
+                    helter og enheter og har kontroll over byer.
+                    <br><br>
+                    Spillet skal være tilgjengelig for både datamaskin og mobile enheter. Av de
+                    mobile enhetene fokuserer vi hovedsakelig på nettbrett med store skjermstørrelser.
+                    Spillet skal være spesialtilpasset til enhetene, slik at kontroller og
+                    brukergrensesnitt passer til berøringsgrensesnitt. Selve utviklingen av spillet
+                    skal foregå i utviklingsverktøyet Unity3D der vi skal bruke programmeringsspråket
+                    C#. Vi får hjelp av en illustratør ved navn Benjamin Brinckmann til å ta for seg
+                    det visuelle i spillet.
+                    <br><br>
+                    Vi ønsker å ha en spillbar prototype innen innleveringsfristen. Denne trenger ikke
+                    nødvendigvis å inneholde ferdig grafikk, ha et balansert kamp system eller være
+                    feilfri. Som effektmål skal vi lære oss utviklingsmetode og -prinsipp gjennom
+                    utførelsen av prosjektet og bruk av Unity for spillprogrammering.
+                </p>
+            </div>
+        </section>
+
+        <section id="diary"> <!-- HER KOMMER BLOGGEN -->
+            <h2>Prosjektdagbok</h2>
+            <div ng-repeat="post in posts">
+                <div class="date" ng-bind-html="post.date | formatDate"></div>
+                <article >
+                    <h2> {{ post.title }} </h2>
+                    <h3> Av {{ post.owner }}</h3>
+                    <p> {{ post.content }} </p>
+                    <p ng-repeat="links in post.links">
+                        <a href="{{ links.link }}">{{ links.text }}</a>
+                    </p>
+                </article>
+            </div>
+        </section>
+
+
+    </main>
+</body>
+</html>
