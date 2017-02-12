@@ -2,20 +2,29 @@
 
 // CONNECTING TO MODEL:
 require_once "../logon.php";
+
  $connection = connectLive();
 //$connection = connectLocal();
 if ($connection->connect_errno)
     die(displayMessage("Database error: ". $connection->errno . ": " . $connection->error));
 
 
-$NUMBER_OF_POSTS = 100;
-$query = "SELECT * FROM prosjektweb_diary ORDER BY prosjektweb_diary.date DESC";
+$query = <<<_END
+    SELECT 	prosjektweb_diary.postID 	AS 'postID', 
+	prosjektweb_diary.title  	AS 'title', 
+        prosjektweb_diary.date	 	AS 'date', 
+        CONCAT(prosjektweb_person.firstname, ' ',prosjektweb_person.lastname)AS 'owner', 
+        prosjektweb_diary.content	AS 'content'
+FROM prosjektweb_diary, prosjektweb_person
+WHERE prosjektweb_diary.owner = prosjektweb_person.id
+ORDER BY prosjektweb_diary.date DESC
+_END;
+
 $payload = array();
 
 if ( $result = $connection->query( $query ) )
 {
-    $i = 0;
-    $query2 = "SELECT text, link FROM prosjektweb_links WHERE postID = ?";
+    $i = 0; // INDEX FOR
 
     while ($row = $result->fetch_assoc())
     {
@@ -27,7 +36,9 @@ if ( $result = $connection->query( $query ) )
             "content" => $row["content"],
             "links"   => ""
         );
+
         // GETTING LINKS:
+        $query2 = "SELECT text, link FROM prosjektweb_links WHERE postID = ?";
         $j = 0;
         if ( $stmt = $connection->prepare($query2) )
         {
@@ -47,11 +58,22 @@ if ( $result = $connection->query( $query ) )
     $result->close();
 
 
+    // LOGGING VISIT:
+    $log_query = "INSERT INTO prosjektweb_visitor_log(date, request_ip, request_host_name) VALUES (NOW(), ?, ?)";
+
+    if ( $stmt = $connection->prepare($log_query) )
+    {
+        $stmt->bind_param("ss", $_SERVER['REMOTE_ADDR'], $_SERVER['REMOTE_HOST']);
+        $stmt->execute();
+    }
+
     // FORMATTING DATA TO JSON:
-    echo json_encode($payload, JSON_UNESCAPED_UNICODE);
+    echo  json_encode($payload, JSON_UNESCAPED_UNICODE);
+
 }
 else
     die(displayMessage("No posts found."));
 
 $connection->close();
+
 ?>

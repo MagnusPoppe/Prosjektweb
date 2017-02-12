@@ -10,7 +10,7 @@ angular
             get: function() {
                 return $http.get('api/users/get.php')
                        .then(function(result) {
-                            return result.data;
+                            return result.users;
                         }
                 );
             }
