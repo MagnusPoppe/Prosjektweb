@@ -8,7 +8,8 @@ angular
     .filter('formatDate', function ($sce)
     {
         return function(x) {
-            var date = x.split("-");
+            var date = x.split(" ");
+            date = date[0].split("-")
             return $sce.trustAsHtml("<span class='day'>"+date[2]+"</span><br>" +
                 "<span class='month'>"+monthShort(parseInt(date[1])-1)+"</span>");
         }

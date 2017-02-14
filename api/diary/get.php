@@ -68,7 +68,7 @@ if ( $result = $connection->query( $query ) )
     }
 
     // FORMATTING DATA TO JSON:
-    echo  json_encode($payload, JSON_UNESCAPED_UNICODE);
+    echo  json_encode($payload);
 
 }
 else

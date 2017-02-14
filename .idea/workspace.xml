@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6f8a25d0-653f-4d4b-b556-907e7ee4f526" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/diary/post.php" afterPath="$PROJECT_DIR$/api/diary/post.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/diary/put.php" afterPath="$PROJECT_DIR$/api/diary/put.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/diary/get.php" afterPath="$PROJECT_DIR$/api/diary/get.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/angular/dateFormatter.filter.js" afterPath="$PROJECT_DIR$/public/angular/dateFormatter.filter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/mobile.css" afterPath="$PROJECT_DIR$/public/stylesheets/mobile.css" />
     </list>
     <ignored path="Prosjektweb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -95,186 +97,87 @@
     <favorites_list name="Prosjektweb" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="diary.controller.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/angular/diary.controller.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" column="31" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="31" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1425">
-                  <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="write.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/write.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="885">
-                  <caret line="59" column="7" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="put.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/api/diary/put.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="960">
-                  <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#6#93#0#PHP" expanded="true" />
-                    <marker date="1486912476000" expanded="true" signature="843:887" ph="SELECT id FR... prosjektweb_person" />
-                    <marker date="1486912476000" expanded="true" signature="1229:1312" ph="UPDATE prosj... " />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="get.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/api/diary/get.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="795">
-                  <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
-                  <folding>
-                    <marker date="1486910293000" expanded="true" signature="1142:1199" ph="SELECT text,... prosjektweb_links" />
-                    <marker date="1486910293000" expanded="true" signature="1708:1728" ph="INSERT INTO prosjekt... " />
-                    <marker date="1486910293000" expanded="true" signature="1708:1801" ph="INSERT INTO prosjektweb_visitor_log... " />
-                    <marker date="1486910293000" expanded="true" signature="1708:2066" ph="INSERT INTO prosjektweb_visitor_log... " />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="createdb.sql" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/api/createdb.sql">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="660">
-                  <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="logon.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/api/logon.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="615">
-                  <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="users.service.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/angular/users.service.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-                  <folding>
-                    <element signature="e#0#48#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="posts.service.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/angular/posts.service.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="11" column="32" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="32" />
-                  <folding>
-                    <element signature="e#0#48#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/.gitignore">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="design.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/stylesheets/design.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="post.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/api/diary/post.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="435">
-                  <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-                  <folding>
-                    <marker date="1486912483000" expanded="true" signature="667:711" ph="SELECT id FR... prosjektweb_person" />
-                    <marker date="1486912483000" expanded="true" signature="1022:1101" ph="INSERT INTO prosjektweb_diary... " />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="write.controller.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/angular/write.controller.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-                  <folding>
-                    <element signature="e#0#48#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="dateFormatter.filter.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/angular/dateFormatter.filter.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-                  <folding>
-                    <element signature="e#0#48#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="desktop.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/stylesheets/desktop.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="diary.controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/angular/diary.controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="99" column="90" selection-start-line="99" selection-start-column="90" selection-end-line="99" selection-end-column="90" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dateFormatter.filter.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/angular/dateFormatter.filter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#48#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="write.controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/angular/write.controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#48#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/diary/get.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <marker date="1487106973000" expanded="true" signature="1142:1199" ph="SELECT text,... prosjektweb_links" />
+                <marker date="1487106973000" expanded="true" signature="1708:1728" ph="INSERT INTO prosjekt... " />
+                <marker date="1487106973000" expanded="true" signature="1708:1801" ph="INSERT INTO prosjektweb_visitor_log... " />
+                <marker date="1487106973000" expanded="true" signature="1708:2042" ph="INSERT INTO prosjektweb_visitor_log... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logon.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/logon.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mobile.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/mobile.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -295,7 +198,6 @@
         <option value="$PROJECT_DIR$/view/home.view.html" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/desktop.css" />
-        <option value="$PROJECT_DIR$/public/stylesheets/mobile.css" />
         <option value="$PROJECT_DIR$/api/diary.php" />
         <option value="$PROJECT_DIR$/public/stylesheets/Design.v01.css" />
         <option value="$PROJECT_DIR$/view/diary.controller.js" />
@@ -316,17 +218,18 @@
         <option value="$PROJECT_DIR$/users.service.js" />
         <option value="$PROJECT_DIR$/write.view.html" />
         <option value="$PROJECT_DIR$/public/stylesheets/design.css" />
-        <option value="$PROJECT_DIR$/public/angular/dateFormatter.filter.js" />
         <option value="$PROJECT_DIR$/write.html" />
         <option value="$PROJECT_DIR$/public/stylesheets/general.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/public/angular/users.service.js" />
         <option value="$PROJECT_DIR$/public/angular/write.controller.js" />
-        <option value="$PROJECT_DIR$/api/logon.php" />
         <option value="$PROJECT_DIR$/api/createdb.sql" />
-        <option value="$PROJECT_DIR$/api/diary/get.php" />
-        <option value="$PROJECT_DIR$/api/diary/put.php" />
         <option value="$PROJECT_DIR$/api/diary/post.php" />
+        <option value="$PROJECT_DIR$/api/diary/put.php" />
+        <option value="$PROJECT_DIR$/public/angular/dateFormatter.filter.js" />
+        <option value="$PROJECT_DIR$/api/logon.php" />
+        <option value="$PROJECT_DIR$/api/diary/get.php" />
+        <option value="$PROJECT_DIR$/public/stylesheets/mobile.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -341,10 +244,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1440" />
-    <option name="y" value="-911" />
-    <option name="width" value="2560" />
-    <option name="height" value="1440" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -372,6 +273,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -474,7 +376,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -570,29 +471,32 @@
       <workItem from="1486036956114" duration="111000" />
       <workItem from="1486650451004" duration="573000" />
       <workItem from="1486726070973" duration="147000" />
-      <workItem from="1486896672821" duration="7585000" />
+      <workItem from="1486896672821" duration="8004000" />
+      <workItem from="1486983868839" duration="1215000" />
+      <workItem from="1487066644664" duration="1094000" />
+      <workItem from="1487106445044" duration="1318000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67066000" />
+    <option name="totallyTimeSpent" value="71112000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="-911" width="2560" height="1440" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20391917" sideWeight="0.52555555" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.091739476" sideWeight="0.47444445" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.094420604" sideWeight="0.47444445" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3347386" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1270073" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" x="1931" y="83" width="1398" height="288" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12620193" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" x="1931" y="83" width="1398" height="288" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08029197" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07942974" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13586098" sideWeight="0.5033365" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -626,7 +530,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="984">
           <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -635,10 +538,10 @@
         <state relative-caret-position="285">
           <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
           <folding>
-            <marker date="1486910293000" expanded="true" signature="1142:1199" ph="SELECT text,... prosjektweb_links" />
-            <marker date="1486910293000" expanded="true" signature="1708:1728" ph="INSERT INTO prosjekt... " />
-            <marker date="1486910293000" expanded="true" signature="1708:1801" ph="INSERT INTO prosjektweb_visitor_log... " />
-            <marker date="1486910293000" expanded="true" signature="1708:2066" ph="INSERT INTO prosjektweb_visitor_log... " />
+            <marker date="1487106973000" expanded="true" signature="1142:1199" ph="SELECT text,... prosjektweb_links" />
+            <marker date="1487106973000" expanded="true" signature="1708:1728" ph="INSERT INTO prosjekt... " />
+            <marker date="1487106973000" expanded="true" signature="1708:1801" ph="INSERT INTO prosjektweb_visitor_log... " />
+            <marker date="1487106973000" expanded="true" signature="1708:2042" ph="INSERT INTO prosjektweb_visitor_log... " />
           </folding>
         </state>
       </provider>
@@ -683,10 +586,10 @@
         <state relative-caret-position="456">
           <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
           <folding>
-            <marker date="1486910293000" expanded="true" signature="1142:1199" ph="SELECT text,... prosjektweb_links" />
-            <marker date="1486910293000" expanded="true" signature="1708:1728" ph="INSERT INTO prosjekt... " />
-            <marker date="1486910293000" expanded="true" signature="1708:1801" ph="INSERT INTO prosjektweb_visitor_log... " />
-            <marker date="1486910293000" expanded="true" signature="1708:2066" ph="INSERT INTO prosjektweb_visitor_log... " />
+            <marker date="1487106973000" expanded="true" signature="1142:1199" ph="SELECT text,... prosjektweb_links" />
+            <marker date="1487106973000" expanded="true" signature="1708:1728" ph="INSERT INTO prosjekt... " />
+            <marker date="1487106973000" expanded="true" signature="1708:1801" ph="INSERT INTO prosjektweb_visitor_log... " />
+            <marker date="1487106973000" expanded="true" signature="1708:2042" ph="INSERT INTO prosjektweb_visitor_log... " />
           </folding>
         </state>
       </provider>
@@ -731,10 +634,10 @@
         <state relative-caret-position="285">
           <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
           <folding>
-            <marker date="1486910293000" expanded="true" signature="1142:1199" ph="SELECT text,... prosjektweb_links" />
-            <marker date="1486910293000" expanded="true" signature="1708:1728" ph="INSERT INTO prosjekt... " />
-            <marker date="1486910293000" expanded="true" signature="1708:1801" ph="INSERT INTO prosjektweb_visitor_log... " />
-            <marker date="1486910293000" expanded="true" signature="1708:2066" ph="INSERT INTO prosjektweb_visitor_log... " />
+            <marker date="1487106973000" expanded="true" signature="1142:1199" ph="SELECT text,... prosjektweb_links" />
+            <marker date="1487106973000" expanded="true" signature="1708:1728" ph="INSERT INTO prosjekt... " />
+            <marker date="1487106973000" expanded="true" signature="1708:1801" ph="INSERT INTO prosjektweb_visitor_log... " />
+            <marker date="1487106973000" expanded="true" signature="1708:2042" ph="INSERT INTO prosjektweb_visitor_log... " />
           </folding>
         </state>
       </provider>
@@ -786,10 +689,10 @@
         <state relative-caret-position="96">
           <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
           <folding>
-            <marker date="1486910293000" expanded="true" signature="1142:1199" ph="SELECT text,... prosjektweb_links" />
-            <marker date="1486910293000" expanded="true" signature="1708:1728" ph="INSERT INTO prosjekt... " />
-            <marker date="1486910293000" expanded="true" signature="1708:1801" ph="INSERT INTO prosjektweb_visitor_log... " />
-            <marker date="1486910293000" expanded="true" signature="1708:2066" ph="INSERT INTO prosjektweb_visitor_log... " />
+            <marker date="1487106973000" expanded="true" signature="1142:1199" ph="SELECT text,... prosjektweb_links" />
+            <marker date="1487106973000" expanded="true" signature="1708:1728" ph="INSERT INTO prosjekt... " />
+            <marker date="1487106973000" expanded="true" signature="1708:1801" ph="INSERT INTO prosjektweb_visitor_log... " />
+            <marker date="1487106973000" expanded="true" signature="1708:2042" ph="INSERT INTO prosjektweb_visitor_log... " />
           </folding>
         </state>
       </provider>
@@ -835,35 +738,28 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/Design.v01.css" />
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/mobile.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/init_data.sql" />
     <entry file="dbDummy://dbtable:/5b5deeca/3d39dccf-692d-4dbd-bf58-357ac9be664c/byteme_no.prosjektweb_person">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/5b5deeca/3d39dccf-692d-4dbd-bf58-357ac9be664c/byteme_no.prosjektweb_diary">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -881,6 +777,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/users/get.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/diary/post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -889,21 +799,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/design.css">
+    <entry file="file://$PROJECT_DIR$/public/angular/posts.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="135">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/angular/dateFormatter.filter.js">
+    <entry file="file://$PROJECT_DIR$/public/angular/users.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#48#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -911,36 +817,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/general.css">
+    <entry file="file://$PROJECT_DIR$/api/diary/put.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="135">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/users/get.php">
+    <entry file="file://$PROJECT_DIR$/write.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        <state relative-caret-position="822">
+          <caret line="59" column="7" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/createdb.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/angular/diary.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="31" />
+        <state relative-caret-position="180">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/angular/posts.service.js">
+    <entry file="file://$PROJECT_DIR$/public/angular/dateFormatter.filter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="32" />
+        <state relative-caret-position="420">
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
           <folding>
             <element signature="e#0#48#0" expanded="false" />
           </folding>
@@ -957,81 +869,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/angular/users.service.js">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/design.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#48#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/write.html">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/general.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="7" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
-          <folding />
+        <state relative-caret-position="540">
+          <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="128" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/api/logon.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+        <state relative-caret-position="345">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/diary/get.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+        <state relative-caret-position="135">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <marker date="1486910293000" expanded="true" signature="1142:1199" ph="SELECT text,... prosjektweb_links" />
-            <marker date="1486910293000" expanded="true" signature="1708:1728" ph="INSERT INTO prosjekt... " />
-            <marker date="1486910293000" expanded="true" signature="1708:1801" ph="INSERT INTO prosjektweb_visitor_log... " />
-            <marker date="1486910293000" expanded="true" signature="1708:2066" ph="INSERT INTO prosjektweb_visitor_log... " />
+            <marker date="1487106973000" expanded="true" signature="1142:1199" ph="SELECT text,... prosjektweb_links" />
+            <marker date="1487106973000" expanded="true" signature="1708:1728" ph="INSERT INTO prosjekt... " />
+            <marker date="1487106973000" expanded="true" signature="1708:1801" ph="INSERT INTO prosjektweb_visitor_log... " />
+            <marker date="1487106973000" expanded="true" signature="1708:2042" ph="INSERT INTO prosjektweb_visitor_log... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/createdb.sql">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/mobile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+        <state relative-caret-position="120">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/logon.php">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="345">
+          <caret line="99" column="90" selection-start-line="99" selection-start-column="90" selection-end-line="99" selection-end-column="90" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/diary/post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-          <folding>
-            <marker date="1486912483000" expanded="true" signature="667:711" ph="SELECT id FR... prosjektweb_person" />
-            <marker date="1486912483000" expanded="true" signature="1022:1101" ph="INSERT INTO prosjektweb_diary... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/diary/put.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#93#0#PHP" expanded="true" />
-            <marker date="1486912476000" expanded="true" signature="843:887" ph="SELECT id FR... prosjektweb_person" />
-            <marker date="1486912476000" expanded="true" signature="1229:1312" ph="UPDATE prosj... " />
-          </folding>
         </state>
       </provider>
     </entry>
