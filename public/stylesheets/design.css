@@ -6,6 +6,19 @@ html, body, #us div
     background: #34495e !important;
 
 }
+
+button {
+    padding: 5px 15px 5px 15px;
+    font-family: Monaco, Inconsolata, Consolas, Monospaced !Important;
+    border: 2px solid white;
+    background: rgba(0,0,0,0);
+}
+
+button:hover
+{
+    background: rgba(255,255,255,1);
+    color: black;
+}
 /**
         FONT:
  */
@@ -23,7 +36,7 @@ h3, h4 {
 
 }
 
-p, .date, label{
+p, .date, label, td, button {
     font-family:  Helvetica, Arial;
     font-size: .8em;
     color: white;

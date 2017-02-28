@@ -9,8 +9,8 @@ angular
         return {
             get: function() {
                 return $http.get('api/users/get.php')
-                       .then(function(result) {
-                            return result.users;
+                       .then( function(result) {
+                            return result.data;
                         }
                 );
             }

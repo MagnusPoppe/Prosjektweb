@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="public/stylesheets/general.css">
     <link rel="stylesheet" href="public/stylesheets/design.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-    <script src="public/angular/write.controller.js"></script>
 
+    <script src="public/angular/write.controller.js"></script>
+    <script src="public/angular/write.functionallity.js"></script>
     <script src="public/angular/posts.service.js"></script>
     <script src="public/angular/users.service.js"></script>
     <script src="public/angular/dateFormatter.filter.js"></script>
@@ -17,22 +19,22 @@
     <main id="write" ng-controller="writeController" >
         <h2>Skriv nytt innlegg:</h2>
         <form action="/api/diary/post.php" method="GET">
-            <input type="text" name="title" id="title" placeholder="Skriv inn tittel" ng-model="titleField">
+            <input type="text" name="title" id="title" placeholder="Skriv inn tittel" ng-model="titleField" onchange="displayDate()">
             <br>
-            <textarea name="content" id="content" rows="10" placeholder="Skriv inn innhold" ng-model="contentField"></textarea>
+            <textarea name="content" id="content" rows="10" placeholder="Skriv inn innhold" ng-model="contentField" onchange="displayDate()"></textarea>
             <div>
                 <label>Hvem er du?</label>
                 <select name="owner" ng-model="ownerField">
-                    <option ng-repeat="user in users" value="{{ user.id }}">{{ user.name }} </option>
+                    <option ng-repeat="user in users" value="{{ user.id }}">{{ user.firstname }} {{ user.lastname}} </option>
                 </select>
-                <button type="submit"> Lagre innlegg </button>
+                <button type="submit">LAGRE INNLEGG</button>
             </div>
         </form>
         <br>
         <section id="diary"> <!-- HER KOMMER BLOGGEN -->
             <h2>Forhåndsvisning av innlegg</h2>
             <div>
-                <div class="date" ng-bind-html="today | formatDate">
+                <div class="previewDate date" ng-bind-html="today | formatDate" onload="displayDate()">
                 </div>
                 <article >
                     <h2> {{ titleField }} </h2>

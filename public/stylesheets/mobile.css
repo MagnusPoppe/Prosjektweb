@@ -23,7 +23,7 @@
         padding: 0 !important;
     }
 
-    #about {
+    #about, #resources {
         margin: 10px !important;
         width: 90% !important;
     }

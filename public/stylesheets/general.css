@@ -28,16 +28,16 @@ header h1
         OM PROSJEKT DELEN:
  */
 
-#about {
+#about{
     width: 100%;
 }
 
-#about div {
+#about div, #resources{
     max-width: 800px;
     margin: auto;
 }
 
-#diary h2, #about h2
+#diary h2, #about h2, #resources h2
 {
     font-size: 1.9em;
     margin-bottom: 0px;
@@ -49,7 +49,7 @@ header h1
     margin-top: 0px;
 }
 
-#diary p, #about p
+#diary p, #about p, td
 {
     font-family:  Helvetica, Arial;
 }
