@@ -31,7 +31,11 @@ if ( $result = $connection->query( $query ) )
            "id"         => $row['id'],
             "date"      => $row["date"],
             "ip"        => $row["request_ip"],
-            "hostname"  => $row["request_hostname"]
+            "hostname"  => $row["request_hostname"],
+            "city"      => $row["City"],
+            "Country"   => $row["Country"],
+            "Org"       => $row["Organisation"],
+            "Postcode"  => $row["Postcode"]
         );
 
         $i++;
