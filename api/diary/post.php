@@ -8,6 +8,8 @@
 
 // CONNECTING TO MODEL:
 require_once "../logon.php";
+require_once "../../common/log.php";
+
 $connection = connectLive();
 
 if ($connection->connect_errno)
@@ -51,3 +53,6 @@ else {
     echo displayMessage(" Something went wrong.");
 }
 
+
+// LOGGING VISIT:
+logVisit($_SERVER['REMOTE_ADDR'], 2);

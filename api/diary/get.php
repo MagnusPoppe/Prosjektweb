@@ -2,6 +2,7 @@
 
 // CONNECTING TO MODEL:
 require_once "../logon.php";
+require_once "../../common/log.php";
 
  $connection = connectLive();
 //$connection = connectLocal();
@@ -59,13 +60,7 @@ if ( $result = $connection->query( $query ) )
 
 
     // LOGGING VISIT:
-    $log_query = "INSERT INTO prosjektweb_visitor_log(date, request_ip, request_host_name) VALUES (NOW(), ?, ?)";
-
-    if ( $stmt = $connection->prepare($log_query) )
-    {
-        $stmt->bind_param("ss", $_SERVER['REMOTE_ADDR'], $_SERVER['REMOTE_HOST']);
-        $stmt->execute();
-    }
+    logVisit($_SERVER['REMOTE_ADDR'], 1);
 
     // FORMATTING DATA TO JSON:
     echo  json_encode($payload);

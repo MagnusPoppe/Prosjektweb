@@ -9,7 +9,8 @@
 $query = <<<_EOF
     SELECT 
         request_ip, 
-        request_host_name, 
+        request_host_name,
+        Organisation,
         City, 
         Country, 
         Postcode, 
@@ -34,6 +35,7 @@ if ( $result = $connection->query( $query ) )
         $payload[$i++] = Array(
             "ip"        => $row["request_ip"],
             "hostname"  => $row["hostname"],
+            "org"       => $row["Organisation"],
             "city"      => $row["City"],
             "country"   => $row["Country"],
             "postal"    => $row["postal"],
