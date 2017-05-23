@@ -1,8 +1,7 @@
 <?php
 
 // CONNECTING TO MODEL:
-require_once "../logon.php";
-require_once "../../common/log.php";
+require_once "../../classified/logon.php";
 
  $connection = connectLive();
 //$connection = connectLocal();
@@ -60,7 +59,7 @@ if ( $result = $connection->query( $query ) )
 
 
     // LOGGING VISIT:
-    logVisit($_SERVER['REMOTE_ADDR'], 1);
+    //logVisit($_SERVER['REMOTE_ADDR'], 1);
 
     // FORMATTING DATA TO JSON:
     echo  json_encode($payload);

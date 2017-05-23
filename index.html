@@ -33,39 +33,41 @@
 
         <section id="us">
             <div>
-                <a href="">
+                <a href="https://www.linkedin.com/in/håkon-mølstre-59b858137/">
                     <img src="public/images/haakon.jpg"/>
                     <h2> Håkon Mølstre</h2>
                 </a>
                 <h4> Back-end programmerer</h4>
                 <p>
-                    Jeg blei med på dette prosjektet fordi jeg er interresert i å lære å lage et spill.
+                    Jeg ble med på dette prosjektet fordi jeg er interessert i å lære å lage et spill og fordi jeg liker
+                    gruppen som skal gjøre prosjektet. Det er også gøy å sette seg inn i nye algoritmer som jeg ikke
+                    har vært borti før.
                 </p>
             </div>
             <div>
-                <a href="http://github.com/magnuspoppe">
+                <a href="http://linkedin.com/in/magnuspw">
                     <img src="public/images/magnus.jpg"/>
                     <h2> Magnus Poppe Wang</h2>
                 </a>
                 <h4> Prosjektleder / Programmerer</h4>
                 <p>
-                    Å Jobbe med spilldesign er noe jeg alltid har hatt lyst til, men aldri har hatt tid til. Det er
-                    også utrolig moro å være med i et stort prosjekt der man har 4 likestilte kodere i arbeid.
+                    Å Jobbe med spilldesign er noe jeg alltid har hatt lyst til, men samtidig aldri har hatt tid til. Det er
+                    også utrolig moro å være med i et større prosjekt der man har fire likestilte kodere i arbeid.
                 </p>
             </div>
             <div>
-                <a href="">
+                <a href="http://eatprayprogram.no">
                     <img src="public/images/ruben.jpg"/>
                     <h2> Ruben Bratsberg</h2>
                 </a>
                 <h4> PR ansvarlig / Programmerer </h4>
                 <p>
                     Driftskraften bak EatPrayProgram jobber som PR-ansvarlig og back-end programmerer for prosjektet.
-                    Jeg ønsker å ha et prosjekt på CVen og utvide kunnskapen min om å lage større prosjekt
+                    Jeg ønsker å ha et prosjekt på CVen og utvide kunnskapen min om å lage større prosjekt.
                 </p>
             </div>
             <div>
-                <a href="">
+                <a href="https://www.linkedin.com/in/håvard-torp-helmersen-438862137/">
                     <img src="public/images/haavard.jpg"/>
                     <h2> Håvard Torp Helmersen</h2>
                 </a>
@@ -115,8 +117,12 @@
         </section>
         <section id="resources">
             <h2>RESSURSSER</h2>
+            <br>
             <table>
                 <tr>
+                    <td><a href="http://github.com/magnuspoppe/trollsandgods"><button>GIT</button></a></td>
+                    <td>GitHub repository for prosjektet</td>
+                </tr><tr>
                     <td><a href="http://byteme.no/document/bachelor_fremdriftsplan.pdf"><button>PDF</button></a></td>
                     <td>Fremdriftsplan for prosjeketet (Gantt-diagram)</td>
                 </tr><tr>
@@ -126,7 +132,54 @@
                     <td><a href="http://byteme.no/document/Prosjektbeskrivelse.pdf"><button>PDF</button></a></td>
                     <td>Prosjektbeskrivelse</td>
                 </tr>
+                </tr><tr>
+                    <td><a href="http://byteme.no/document/Milepael1.pdf"><button>PDF</button></a></td>
+                    <td>Presentasjon, Milepæl 1</td>
+                </tr><tr>
+                    <td><a href="http://byteme.no/document/Milepael2.pdf"><button>PDF</button></a></td>
+                    <td>Presentasjon, Milepæl 2</td>
+                </tr><tr>
+                    <td><a href="http://byteme.no/document/Milepael3.pdf"><button>PDF</button></a></td>
+                    <td>Presentasjon, Milepæl 3</td>
+                </tr>
             </table>
+        </section>
+        <section id="downloads">
+            <h2>NEDLASTNINGER</h2>
+            <p>
+                De forskjellige nedlastningene under er for Release 3, Combat. Dette er her prosjektet ble
+                avsluttet. Se selve releasen kan du finne her, sammen med kildekode og installasjonsfiler:
+                <br><a href="https://github.com/MagnusPoppe/TrollsAndGods/releases">
+                    https://github.com/MagnusPoppe/TrollsAndGods/releases
+                </a>
+            </p>
+            <br>
+            <br>
+            <div>
+                <a href="https://github.com/MagnusPoppe/TrollsAndGods/releases/download/v1.0.0/Windows-Installer-v1.0.0.exe">
+                    <button>
+                        <img    height="24"
+                                src="./public/images/osWindows.png"
+                        ><br>v1.0.0
+                    </button>
+
+                </a>
+                <a href="https://github.com/MagnusPoppe/TrollsAndGods/releases/download/v1.0.0/macOS-installer-v1.0.0.app.zip">
+                    <button>
+                        <img    height="24"
+                                src="./public/images/osMac.png"
+                        ><br>v1.0.0
+                    </button>
+
+                </a>
+                <a href="https://github.com/MagnusPoppe/TrollsAndGods/releases/download/v1.0.0/android-installer-v1.0.0.apk">
+                    <button>
+                        <img    height="24"
+                                src="./public/images/osAndroid.png"
+                        ><br>v1.0.0
+                    </button>
+                </a>
+            </div>
         </section>
 
         <section id="diary"> <!-- HER KOMMER BLOGGEN -->
@@ -137,8 +190,8 @@
                     <h2> {{ post.title }} </h2>
                     <h3> Av {{ post.owner }}</h3>
                     <p> {{ post.content }} </p>
-                    <p ng-repeat="links in post.links">
-                        <a href="{{ links.link }}">{{ links.text }}</a>
+                    <p ng-repeat="link in post.links">
+                        <a href="{{ link.link }}">{{ link.text }}</a>
                     </p>
                 </article>
             </div>

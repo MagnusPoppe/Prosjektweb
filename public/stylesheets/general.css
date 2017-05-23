@@ -32,7 +32,7 @@ header h1
     width: 100%;
 }
 
-#about div, #resources{
+#about div, #resources, #downloads{
     max-width: 800px;
     margin: auto;
 }
@@ -53,6 +53,25 @@ header h1
 {
     font-family:  Helvetica, Arial;
 }
+
+#downloads div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#downloads div button {
+    width: 250px;
+}
+
+#downloads div button p :hover {
+
+    color: black;
+
+}
+
+
+
+
 /**
         OM OSS DELEN:
  */
@@ -60,7 +79,7 @@ header h1
 #us {
     text-align: center;
 
-    background: url("https://s-media-cache-ak0.pinimg.com/originals/f5/68/75/f568753d25224271b5cb882f926cfe6b.jpg");
+    background: url("http://byteme.no/image/avisoppslag.jpg");
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -71,6 +90,8 @@ header h1
 #us div {
     width: 200px;
     height: 351px;
+    position: relative;
+    top: 0;
     display: inline-block;
     margin: 30px 15px 30px 15px;
     box-shadow: 0px 0px 5px #000000;

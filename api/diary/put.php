@@ -8,7 +8,7 @@
 
 
 // CONNECTING TO MODEL:
-require_once "../logon.php";
+require_once "../../classified/logon.php";
 $connection = connectLive();
 
 // CHECKING INPUT FOR ERRORS:
